@@ -16,6 +16,11 @@ body{
     color: #FFFFFF;
 }
 
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .mainContainer, .headerContainer {
     display: flex;
     flex-direction: column;
@@ -26,17 +31,14 @@ body{
 .mainContainer{
     width: 588px;
     height: 712px;
-    background-color: darkgoldenrod;
     position: relative;
 }
 
 .mainContainer .headerContainer{
     width: 588px;
     height: 192px;
-    background-color: darkgray;
     padding: 24px;
-    /*position: absolute;
-    top: 0;*/
+
 }
 
 .mainContainer .headerContainer .headImage{
@@ -79,10 +81,11 @@ body{
 .mainContainer .linksContainer{
     width: 588px;
     height: 320px;
-    background-color: darkblue;
     padding: 24px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
 .mainContainer .linksContainer .linkButtons{
@@ -94,3 +97,31 @@ body{
     border-radius: 8px;
     padding: 16px;
 }
+
+
+.mainContainer .linksContainer .linkButtons:hover{
+    cursor: pointer;
+}
+.mainContainer .mediaLinksContainer{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.mainContainer .mediaLinksContainer ion-icon{
+    font-size: 24px;
+}
+
+.mainContainer .footContainer{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+}
+
