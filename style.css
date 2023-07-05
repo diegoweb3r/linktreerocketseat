@@ -1,3 +1,26 @@
+
+:root{
+    --text-color: #FFFFFF;
+    --bg: url("assets/bg-desktop.jpg");
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.10);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --button-bg: url("assets/MoonStars.svg");
+    --avatar: url("assets/avatar.png");
+}
+
+.light{
+    --text-color: #000000;
+    --bg: url("assets/bg-desktop-light.jpg");
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --button-bg: url("assets/Sun.svg");
+    --avatar: url("assets/avatar.png");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,18 +30,18 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url("assets/bg-desktop.jpg");
+    background-image: var(--bg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Inter", sans-serif;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 .mainContainer, .headerContainer {
@@ -62,20 +85,26 @@ a{
     width: 64px;
     height: 24px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid var(--stroke-color);
+    background: var(--surface-color);
     
 }
 
-.mainContainer .modeControls .modeButton img{
+.mainContainer .modeControls .modeButton .switch{
     width: 32px;
     height: 32px;
     padding: 8px;
+    border: 0;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background: var(--text-color) var(--button-bg) no-repeat center;
     position: absolute;
     top: -3px;
     left: -3px;
+}
+
+.mainContainer .modeControls .modeButton .switch:hover{
+    border: 8px solid var(--highlight-color);
+    box-shadow: 0px 2px 8px 0px var(--surface-color);
 }
 
 .mainContainer .linksContainer{
@@ -91,9 +120,9 @@ a{
 .mainContainer .linksContainer .linkButtons{
     width: 540px;
     height: 56px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid var(--stroke-color);
+    color: var(--text-color);
+    background-color: var(--surface-color);
     border-radius: 8px;
     padding: 16px;
 }
