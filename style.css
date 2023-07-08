@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --text-color: #FFFFFF;
     --bg: url("assets/bg-desktop.jpg");
     --stroke-color: rgba(255, 255, 255, 0.5);
@@ -9,7 +8,7 @@
     --button-bg: url("assets/MoonStars.svg");
 }
 
-.light{
+.light {
     --text-color: #000000;
     --bg: url("assets/bg-desktop-light.jpg");
     --stroke-color: rgba(0, 0, 0, 0.5);
@@ -19,17 +18,17 @@
     --button-bg: url("assets/Sun.svg");
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     background: var(--bg) no-repeat center;
@@ -41,37 +40,40 @@ body{
     color: var(--text-color);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--text-color);
 }
 
-a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
+a:hover,
+.mainContainer .modeButton:hover,
+ion-icon:hover {
     cursor: pointer;
 }
 
-.mainContainer, .headerContainer {
+.mainContainer,
+.headerContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.mainContainer{
-    width: 588px;
+.mainContainer {
+    max-width: 588px;
     height: 712px;
     position: relative;
-    
+
 }
 
-.mainContainer .headerContainer{
-    width: 588px;
+.mainContainer .headerContainer {
+    max-width: 588px;
     height: 192px;
     padding: 24px;
 
 }
 
-.mainContainer .headerContainer .imgContainer{
+.mainContainer .headerContainer .imgContainer {
     width: 112px;
     height: 112px;
     margin-bottom: 8px;
@@ -79,27 +81,27 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
     border-radius: 50%;
 }
 
-.mainContainer .modeControls{
+.mainContainer .modeControls {
     width: 64px;
     height: 40px;
     position: relative;
     margin: 4px 0 8px 0;
 }
 
-.mainContainer .modeControls:hover{
+.mainContainer .modeControls:hover {
     cursor: pointer;
 }
 
-.mainContainer .modeControls .modeButton{
+.mainContainer .modeControls .modeButton {
     width: 64px;
     height: 24px;
     border-radius: 9999px;
     border: 1px solid var(--stroke-color);
-    background: var(--surface-color); 
+    background: var(--surface-color);
     backdrop-filter: blur(4px);
 }
 
-.mainContainer .modeControls .modeButton .switch{
+.mainContainer .modeControls .modeButton .switch {
     display: block;
     width: 32px;
     height: 32px;
@@ -111,16 +113,16 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
     transform: translateY(-50%);
 }
 
-.light .mainContainer .modeControls .modeButton .switch{
+.light .mainContainer .modeControls .modeButton .switch {
     right: 0;
     left: initial;
 }
 
-.mainContainer .modeControls .modeButton .switch:hover{
+.mainContainer .modeControls .modeButton .switch:hover {
     border: 8px solid var(--highlight-color);
 }
 
-.mainContainer .linksContainer{
+.mainContainer .linksContainer {
     max-width: 588px;
     height: 320px;
     padding: 24px;
@@ -133,7 +135,7 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
 
 
 
-.mainContainer .linksContainer .linkButtons{
+.mainContainer .linksContainer .linkButtons {
     width: 540px;
     height: 56px;
     border: 1px solid var(--stroke-color);
@@ -144,11 +146,12 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
 }
 
 
-.mainContainer .linksContainer .linkButtons:hover{
+.mainContainer .linksContainer .linkButtons:hover {
     cursor: pointer;
 }
-.mainContainer .mediaLinksContainer{
-    width: 100%;
+
+.mainContainer .mediaLinksContainer {
+    max-width: 100%;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -156,12 +159,12 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
     gap: 16px;
 }
 
-.mainContainer .mediaLinksContainer ion-icon{
+.mainContainer .mediaLinksContainer ion-icon {
     font-size: 24px;
 }
 
-.mainContainer .footContainer{
-    width: 100%;
+.mainContainer .footContainer {
+    max-width: 100%;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -171,14 +174,12 @@ a:hover, .mainContainer .modeButton:hover, ion-icon:hover{
 }
 
 @media (max-width: 580px) {
-    body
-    .mainContainer .linksContainer{
-        background-color: red;
-        padding: 0; 
+    body .mainContainer .linksContainer {
+        padding: 0;
     }
 
-    .mainContainer .linksContainer .linkButtons{
+    .mainContainer .linksContainer .linkButtons {
         max-width: 375px;
     }
-    
+
 }
