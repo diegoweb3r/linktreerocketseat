@@ -1,7 +1,7 @@
 <h1 align="center"> Agregador de Links</h1>
 
 <p align="center">
-Projeto de agregador de links responsivo com dark-mode :moon: e ligth-mode :lamp:  realizado durante as aulas Discover da  <a href="https://app.rocketseat.com.br/discover">RocketSeat</a><br/>
+Projeto de agregador de links responsivo com dark-mode :moon: e ligth-mode 💡 realizado durante as aulas Discover da  <a href="https://app.rocketseat.com.br/discover">RocketSeat</a><br/>
 <i>toda a estrutura, estilo e algoritmos foram criados por mim, não seguindo, o modelo proposto em aula</i>
 </p>
 <p align="center">
