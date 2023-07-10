@@ -31,7 +31,7 @@ Agregador de links é uma página que reune todos os links importantes para se c
 
 - [Visite o projeto online](https://diegoweb3r.github.io/linktreerocketseat/)
 
-## :book: Comentários
+## :book: Comentarios
 Com o conhecimento que adquiri até o momento, estou confiante de que poderei realizar esse projeto com sucesso. Acredito que não será tão complexo, especialmente com a ajuda do projeto no Figma, que me permitirá visualizar e planejar todas as etapas de desenvolvimento de forma mais eficiente. Estou animado para colocar em prática tudo o que aprendi até agora e aprimorar minhas habilidades no processo.
 
 <hr>
