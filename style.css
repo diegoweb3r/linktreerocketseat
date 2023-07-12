@@ -47,7 +47,7 @@ a {
 
 a:hover,
 .mainContainer .modeButton:hover,
-ion-icon:hover {
+ion-icon:hover, .mainContainer .modeControls:hover, .mainContainer .linksContainer .linkButtons:hover {
     cursor: pointer;
 }
 
@@ -88,9 +88,6 @@ ion-icon:hover {
     margin: 4px 0 8px 0;
 }
 
-.mainContainer .modeControls:hover {
-    cursor: pointer;
-}
 
 .mainContainer .modeControls .modeButton {
     width: 64px;
@@ -111,15 +108,15 @@ ion-icon:hover {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    animation: slide-back .2s forwards;
 }
 
 .light .mainContainer .modeControls .modeButton .switch {
-    right: 0;
-    left: initial;
+   animation: slide-in .2s forwards;
 }
 
 .mainContainer .modeControls .modeButton .switch:hover {
-    border: 8px solid var(--highlight-color);
+    outline: 8px solid var(--highlight-color);
 }
 
 .mainContainer .linksContainer {
@@ -133,8 +130,6 @@ ion-icon:hover {
     margin-bottom: 24px;
 }
 
-
-
 .mainContainer .linksContainer .linkButtons {
     width: 540px;
     height: 56px;
@@ -143,11 +138,6 @@ ion-icon:hover {
     background-color: var(--surface-color);
     border-radius: 8px;
     padding: 16px;
-}
-
-
-.mainContainer .linksContainer .linkButtons:hover {
-    cursor: pointer;
 }
 
 .mainContainer .mediaLinksContainer {
@@ -182,4 +172,24 @@ ion-icon:hover {
         max-width: 375px;
     }
 
+}
+
+@keyframes slide-in {
+    from{
+        left: 0
+    }
+
+    to{
+        left: 50%
+    }
+}
+
+@keyframes slide-back {
+    from{
+        left: 50%
+    }
+
+    to{
+        left: 0
+    }
 }
